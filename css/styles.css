@@ -241,7 +241,7 @@ a {
 
 .button {
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px;
   display: inline-block;
   min-width: 200px;
   border: 1px solid transparent;
@@ -274,6 +274,29 @@ a {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-title {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-image: url(../images/xxx.svg);
+  background-position: center;
+background-color: #fff; #ffffff;
 }
 
 /*наши преимущества*/

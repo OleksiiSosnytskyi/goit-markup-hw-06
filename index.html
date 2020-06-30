@@ -61,13 +61,37 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente voluptatem dolore nesciunt, nostrum perferendis labore
-                quaerat provident voluptate quis porro dolorum nulla autem, nam
-                dolor officiis recusandae minus magni quibusdam!
-              </p>
-              <button data-modal-close>закрыть</button>
+              <form class="form">
+                <b class="modal-title"
+                  >Оставьте свои данные, мы вам перезвоним</b
+                >
+                <div class="form-field">
+                  <label for="name">Имя</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="form-field">
+                  <label for="tel">Телефон</label>
+                  <input type="tel" name="tel" id="tel" />
+                </div>
+                <div class="form-field">
+                  <label for="email">Почта</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div class="form-field">
+                  <label for="comment">Комментарий</label>
+                  <textarea name="comment" id="comment"></textarea>
+                </div>
+                <div class="form-field">
+                  <input type="checkbox" name="policy" id="policy" />
+
+                  <label for="policy"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="#"> Условия договора</a></label
+                  >
+                </div>
+                <button class="button">Отправить</button>
+              </form>
+              <button class="close-btn" data-modal-close></button>
             </div>
           </div>
         </div>
