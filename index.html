@@ -59,41 +59,6 @@
           <button class="button" data-modal-open>
             Заказать услугу
           </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <form class="form">
-                <b class="modal-title"
-                  >Оставьте свои данные, мы вам перезвоним</b
-                >
-                <div class="form-field">
-                  <label for="name">Имя</label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div class="form-field">
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel" />
-                </div>
-                <div class="form-field">
-                  <label for="email">Почта</label>
-                  <input type="text" name="email" id="email" />
-                </div>
-                <div class="form-field">
-                  <label for="comment">Комментарий</label>
-                  <textarea name="comment" id="comment"></textarea>
-                </div>
-                <div class="form-field">
-                  <input type="checkbox" name="policy" id="policy" />
-
-                  <label for="policy"
-                    >Соглашаюсь с рассылкой и принимаю
-                    <a href="#"> Условия договора</a></label
-                  >
-                </div>
-                <button class="button">Отправить</button>
-              </form>
-              <button class="close-btn" data-modal-close></button>
-            </div>
-          </div>
         </div>
       </section>
       <!-- наши преимущества -->
@@ -532,8 +497,8 @@
         <div class="subscribe">
           <b class="join-us">Подпишитесь на рассылку</b>
           <form class="subscribe-form">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <!-- <label for="email"></label> -->
+            <input type="email" name="email" placeholder="E-mail" />
             <button type="submit" class="subscribe-button button">
               Подписаться
             </button>
@@ -541,6 +506,40 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close></button>
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="form">
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="email">Почта</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment"></textarea>
+          </div>
+          <div class="form-field">
+            <input type="checkbox" name="policy" id="policy" />
+
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#"> Условия договора</a></label
+            >
+          </div>
+          <button class="button">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
